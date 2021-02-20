@@ -36,6 +36,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+header nav {
+    flex-direction: row;
+}
 
 header {
     background-color: rgb(198, 255, 0);
@@ -44,10 +47,22 @@ nav {
     background-color: rgb(12, 255, 0);
 }
 
+article {
+    flex-direction: column;
+    background-color: rgb(198, 255, 0);
+    width: 30em;
+}
+
+section {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
 footer {
     position: absolute;
     bottom: 0;
-    width: 100%; 
+    justify-content: center;
 }
         </style>
     </head>    
@@ -60,11 +75,19 @@ footer {
         <nav>
             <a href="./index.html">stzups</a>
         </nav>
-        <article>
-            <p>stzups.net</p>
-        </article>
+        <section>
+            <article>
+                <p>welcome to my website</p>
+            </article>
+            <article>
+                <h1>contact</h1>
+                <a href="https://github.com/stzups">github: stzups</a>
+                <a href="https://www.reddit.com/user/stzups">reddit: u/stzups (inactive)</a>
+                <p>discord: stzups#5011</p>
+            </article>
+        </section>
         <footer>
-            <p>contact info pending</p>
+            <p>stzups</p>
         </footer>
     </body>
 </html>
