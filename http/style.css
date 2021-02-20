@@ -3,19 +3,19 @@ body {
     padding: 0;
     background-color: rgb(255, 246, 0);
     background: url("stzups100x100.png") top 50px left 50px;
-    font: 1em sans-serif;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
 }
 
-body * {
+body > * {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-body * * {
-    padding: .25em;
+article > * {
+    text-align: center;
 }
 
 a {
@@ -26,6 +26,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 header nav {
     flex-direction: row;
 }
@@ -35,6 +36,10 @@ header {
 }
 nav {
     background-color: rgb(12, 255, 0);
+}
+
+nav * {
+    padding: .25em;
 }
 
 article {
