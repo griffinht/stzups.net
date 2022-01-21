@@ -54,7 +54,14 @@ body {
         <li>/</li>
         <li>\</li>
       </ul>
+      <img src="tracking/" style="display: none;">
     <script>
+function submitTracking(value) {
+    let request = new XMLHttpRequest();
+    request.open("GET", "tracking/" + value);
+    request.send();
+}
+submitTracking("javascript");
 //Chat max is 256 (11 unusable so 245)
 //Each rｏw is 35 chars long
 //Each letter is 5 chars wide, with a 1 wide space, so 5 characters per line
@@ -344,9 +351,9 @@ new Letter('\\','10000',
                 '01000',
                 '00100',
                 '00010',
-                '00001',);               
+                '00001',);       
 document.getElementById('submit').addEventListener('click',function( ) {
-
+  submitTracking("input/" + input.value);
   var a = input.value.toLowerCase();
   var b = output.value;
   if(a.length<=5){
